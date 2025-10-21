@@ -1,0 +1,531 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    max-width: 350PX;
+    margin: auto;
+    height: 100vh;
+    border: 2px solid;
+} */
+header {
+    background-color: rgb(19, 18, 18);
+    text-align: center;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo {
+    height: 3em;
+}
+
+.main-heading {
+    padding-top: 5em;
+    background-color: grey;
+    text-align: center;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+}
+
+.main-heading h3 {
+    font-family: Arial;
+    font-size: 1em;
+}
+
+.main-heading h1 {
+    font-family: Arial;
+    font-size: 2em;
+}
+
+.main-heading small {
+    font-family: Arial;
+    font-size: .8em;
+    font-style: italic;
+}
+
+#push_small_down {
+    padding-bottom: 3em;
+}
+
+form {
+    padding-top: 3em;
+    width: 85%;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.login-form div {
+    padding-bottom: 1.5em;
+}
+
+
+
+.login-form label,
+input {
+    display: block;
+    line-height: 1em;
+    font-family: Arial;
+    text-align: left;
+}
+
+.login-form input {
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    border-radius: 10px;
+    padding: .8em .2em;
+    font-size: 1.2em;
+    width: 100%;
+    box-shadow: 0 0 2px #070707;
+    /* glow effect */
+    margin-top: .2em;
+}
+
+.login-form label {
+    font-size: .9em;
+    color: rgb(82, 80, 80);
+}
+
+.login-form button {
+    background-color: transparent;
+    border: 1.5px solid black;
+    width: 8em;
+    padding: .2em 0;
+    border-radius: 20px;
+    background-color: rgba(165, 164, 164, 0.144);
+    font-size: 1.4em;
+}
+
+.login-form button:hover {
+    background-color: #070707;
+    color: white;
+}
+
+footer {
+    margin-top: 5em;
+
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+footer small {
+    display: inline-block;
+    padding-top: 2em;
+    font-family: Arial;
+    font-size: .7em;
+    padding-bottom: 2em;
+}
+
+/* DASHBOARD SECTION STYLING*/
+
+.welcome_to_dashboard {
+    border: 2px solid rgba(24, 23, 23, 0.248);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.welcome_to_dashboard {
+    p {
+        font-family: Arial;
+        font-size: 1.2em;
+        padding-top: 1em;
+        font-weight: 700;
+    }
+
+    span {
+        height: .9em;
+        padding: 0;
+        margin: 0;
+    }
+
+    small {
+        display: block;
+        font-family: Arial;
+        font-style: italic;
+        font-size: 1.2em;
+        padding-top: .5em;
+        color: gray;
+    }
+
+}
+
+
+.bank_account_balance {
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    text-align: left;
+    gap: .6em;
+    width: 95%;
+    padding-left: .5em;
+
+
+
+    .account {
+        background-color: #070707;
+        color: white;
+        width: 10em;
+        padding: 1.5em 0;
+        padding-left: 1em;
+        border-radius: 10px;
+        width: 100%;
+
+        p {
+            font-family: Arial;
+        }
+
+
+    }
+
+    .account :first-child {
+        opacity: 0.9;
+    }
+
+
+    .account :nth-child(2) {
+        padding: .5em 0;
+        opacity: 0.8;
+    }
+
+    .account :last-child {
+        color: greenyellow;
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+
+}
+
+.account p:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.account .fi {
+    font-size: 1.2em;
+}
+
+
+
+/* QUICK ACTION STYLING*/
+.quick_btn {
+    display: flex;
+    flex-flow: column;
+}
+
+.quick-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: .3em;
+    gap: 0.5em;
+}
+
+.quick-actions button {
+    width: 20em;
+    background-color: rgba(241, 239, 239, 0.829);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#btn:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+.action-icon {
+    font-size: 1.5rem;
+    color: #131313;
+    margin: 0 0.5em;
+}
+
+.cashout {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+
+    button {
+        width: 15em;
+        background-color: rgba(241, 239, 239, 0.829);
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: .7em;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: grey;
+        color: white;
+    }
+}
+
+
+.notifications {
+    display: flex;
+    flex-flow: column;
+    margin-top: .5em;
+    padding: 0 .5em;
+    background-color: rgba(128, 128, 128, 0.301);
+
+    :first-child {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: Arial;
+        padding: .3em 0;
+        margin-top: .4em;
+    }
+
+    p {
+
+        padding: 0 .5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        font-family: arial;
+
+
+        #succesful {
+            color: rgb(15, 168, 89);
+        }
+
+        #failed {
+            color: Red;
+        }
+    }
+}
+
+footer {
+
+    .main-nav {
+        background-color: #000;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em 0;
+        border-top: 1px solid gray;
+
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            align-items: center;
+            color: white;
+            font-family: arial;
+            font-size: 0.8em;
+            transition: 0.2 ease-in-out;
+            opacity: 0.9;
+        }
+
+        .nav-item i {
+            font-size: 1.5em;
+            margin-bottom: 0.1;
+
+        }
+
+        .nav-item:hover {
+            transform: translateY(-3px);
+            color: #6eb973fb;
+        }
+    }
+
+}
+
+
+
+.ng_acc_history {
+    margin-top: .5em;
+}
+
+
+
+.trx_header {
+    font-family: arial;
+    text-align: center;
+    font-weight: 700;
+    font-size: .8em;
+    padding-top: 1em;
+    border-bottom: 2px solid gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+    h2 {
+        color: rgba(1, 1, 1, 0.674);
+    }
+}
+
+
+.transaction_history {
+    padding-top: 1em;
+    margin-top: .5em;
+    background-color: gainsboro;
+    padding-bottom: 15em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+
+    .transaction_card {
+        margin-bottom: .5em;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        padding: .5em 2em;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 20em;
+
+
+        .icon {
+            background-color: #000000;
+            color: white;
+            font-size: 1em;
+            padding: 1em;
+            border-radius: 50%;
+        }
+
+        .recipient {
+            font-family: arial;
+            font-weight: 700;
+        }
+
+        .amount {
+            font-family: arial;
+            font-weight: 700;
+            color: rgb(7, 109, 5);
+        }
+
+        .date_status {
+            font-family: arial;
+            font-size: .8em;
+            color: gray;
+
+            .green {
+                color: rgb(15, 206, 38);
+                font-weight: 700;
+                font-size: 1em;
+
+            }
+
+            .red {
+                color: red;
+                font-weight: 700;
+                font-size: 1em;
+            }
+
+            .gray {
+                font-weight: 700;
+                font-size: 1em;
+            }
+
+            .black {
+                color: black;
+                font-weight: 700;
+                font-size: 1em;
+            }
+        }
+
+    }
+}
+
+.transaction_card:hover {
+    transform: translateY(-2px);
+}
+
+
+.settings_header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1em 0;
+
+    h1 {
+        font-family: arial;
+        font-size: 1.2em;
+        opacity: 0.8;
+    }
+
+}
+
+
+
+.cards_container {
+    color: rgb(6, 27, 99);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 1em;
+
+
+        h3 {
+            color: black;
+            font-family: arial;
+            font-size: 1em;
+            padding-bottom: .3em;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.206);
+        }
+
+        ul {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            padding-left: .2em;
+            list-style: none;
+            text-align: left;
+            line-height: 3em;
+
+            li {
+                font-family: arial;
+                font-size: 1.3em;
+                color: gray;
+
+                i {
+                    font-size: 1em;
+                    padding: .2em;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+

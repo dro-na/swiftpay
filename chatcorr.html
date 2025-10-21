@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Card</title>
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f2f5;
+    }
+
+    .transaction-card {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      padding: 1em;
+      background-color: #ffffff;
+      border-radius: 12px;
+      
+      max-width: 320px;
+    }
+
+    .transaction-card .icon {
+      font-size: 1.8em;
+      background-color: #e0e0e0;
+      padding: 0.5em;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2c7a7b;
+    }
+
+    .transaction-card .info .recipient {
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .transaction-card .info .amount {
+      font-size: 1.1em;
+      margin-top: 0.2em;
+      color: #2c7a7b;
+      font-weight: bold;
+    }
+
+    .transaction-card .info .date-status {
+      font-size: 0.8em;
+      color: gray;
+      margin-top: 0.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="transaction-card">
+    <div class="icon"><i class="bi bi-arrow-left-right"></i></div>
+    <div class="info">
+      <div class="recipient">Sent to Emma</div>
+      <div class="amount">₦2,500</div>
+      <div class="date-status">20 Oct 2025 • Successful</div>
+    </div>
+  </div> 
+</body>
+</html>

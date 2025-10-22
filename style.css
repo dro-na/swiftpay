@@ -319,6 +319,9 @@ footer small {
 
 /* FOOTER STYLING */
 
+
+
+
 footer {
 
     .main-nav {
@@ -332,6 +335,12 @@ footer {
         align-items: center;
         padding: 1em 0;
         border-top: 1px solid gray;
+
+        @media (min-width: 400px) {
+            position: static;
+            flex-flow: row;
+            width: 100%;
+        }
 
 
         .nav-item {
@@ -634,5 +643,20 @@ footer {
 
     i {
         color: rgb(105, 6, 6);
+    }
+}
+
+
+
+
+
+
+@media(min-width: 400px) {
+    .main-container {
+        max-width: 300px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        overflow: hidden;
     }
 }
